@@ -754,7 +754,18 @@ def bot(op):
                     msg.contentType = 13
                     msg.contentMetadata = {"mid":saya}
                     cl.sendMessage(msg)
-                    
+
+		
+#---------------------------------------------
+               elif msg.text.lower().startswith ==key["keyCommand"]+ ' imagetext ':
+                            sep = msg.text.split(" ")
+                            textnya = msg.text.replace(sep[0] + " ","")
+                            path = "http://chart.apis.google.com/chart?chs=480x80&cht=p3&chtt=" + textnya + "&chts=FFFFFF,70&chf=bg,s,000000"
+                            urllib.urlretrieve(path, "steal.png")
+	                          #urllib.urlretrieve(path, 
+	                          #"steal.png")
+                            cl.sendImage(msg.to,"steal.png")
+		
                 elif msg.text.lower() == key["keyCommand"]+'friendlist':
                     contactlist = cl.getAllContactIds()
                     kontak = cl.getContacts(contactlist)
