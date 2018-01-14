@@ -213,6 +213,7 @@ def myself():
                          "╠ " + mykey + "MyBio" + "\n" + \
                          "╠ " + mykey + "MyPicture" + "\n" + \
                          "╠ " + mykey + "MyCover" + "\n" + \
+                         "╠ " + mykey + "imagetext" + "\n" + \
                          "╠ " + mykey + "StealMid" + "\n" + \
                          "╠ " + mykey + "StealName" + "\n" + \
                          "╠ " + mykey + "StealBio" + "\n" + \
