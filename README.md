@@ -15,6 +15,7 @@ in C9 :
 - Ketik -> `sudo pip install requests==2.5.3`
 - Ketik -> `sudo pip install bs4`
 - Ketik -> `sudo pip install gtts`
+- Ketik -> `sudo pip install pytz`
 - Ketik -> `sudo pip install googletrans`
 - Ketik -> `git clone https://github.com/zelebez6969/zelebezsb`
 - Ketik -> `cd zelebezsb`
@@ -29,6 +30,7 @@ Di Termux :
 - Ketik -> `pip2 install requests`
 - Ketik -> `pip2 install bs4`
 - Ketik -> `pip2 install gtts`
+- Ketik -> `pip2 install pytz`
 - Ketik -> `pip2 install googletrans`
 - Ketik -> `git clone https://github.com/zelebez69/zelebezsb`
 - Ketik -> `cd zelebezsb`
