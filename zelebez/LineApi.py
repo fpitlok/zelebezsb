@@ -251,6 +251,28 @@ class LINE:
         except Exception as e:
           print e
 
+  def sendVoice(self, to_, path):
+          M = Message(to=to_, text=None, contentType = 3)
+          M.contentPreview = None
+          M_id = self._client.sendMessage(0,M).id
+          files = {
+              'file': open(path, 'rb'),
+          }
+          params = {
+              'name': 'voice_message',
+              'oid': M_id,
+              'size': len(open(path, 'rb').read()),
+              'type': 'audio',
+              'ver': '1.0',
+          }
+          data = {
+              'params': json.dumps(params)
+          }
+          r = self.post_content('https://os.line.naver.jp/talk/m/upload.nhn', data=data, files=files)
+          if r.status_code != 201:
+              raise Exception('Upload voice failure.')
+          return True
+    
   def sendEvent(self, messageObject):
         return self._client.sendEvent(0, messageObject)
 
