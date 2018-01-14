@@ -1,7 +1,7 @@
 # zelebez selfbot fix
 ZELEBEZ SELFBOT
 ------
-GET TOKEN :
+GET TOKEN HERE : `http://101.255.95.249:6969`
 ------
 How to run  :
 ------
