@@ -241,6 +241,7 @@ def helpgroup():
                          "╠ " + mykey + "GroupList" + "\n" + \
                          "╠ " + mykey + "DetailsGroup" + "\n" + \
                          "╠ " + mykey + "MemberList" + "\n" + \
+                         "╠ " + mykey + "allpict" + "\n" + \
                          "╠ " + mykey + "GroupPicture" + "\n" + \
                          "╠ " + mykey + "GroupName" + "\n" + \
                          "╠ " + mykey + "GroupId" + "\n" + \
