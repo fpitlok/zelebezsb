@@ -759,7 +759,7 @@ def bot(op):
 
 		
 #---------------------------------------------
-               elif msg.text.lower().startswith ==key["keyCommand"]+ ' imagetext ':
+                elif msg.text.lower().startswith ==key["keyCommand"]+ ' imagetext ':
                             sep = msg.text.split(" ")
                             textnya = msg.text.replace(sep[0] + " ","")
                             path = "http://chart.apis.google.com/chart?chs=480x80&cht=p3&chtt=" + textnya + "&chts=FFFFFF,70&chf=bg,s,000000"
