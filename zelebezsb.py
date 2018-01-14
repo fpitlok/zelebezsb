@@ -1387,7 +1387,31 @@ def bot(op):
                     if settings["simiSimi"] == True: md+="☞ Simisimi → ✔\n"
                     else:md+="☞ Simisimi → ❌\n"
                     cl.sendText(msg.to,md)
-                    
+
+#------------
+                elif key["keyCommand"]+"allpict" in msg.text.lower():
+                       nk0 = msg.text.lower.replace("allpict","")
+                       nk1 = nk0.lstrip()
+                       nk2 = nk1.replace("","")
+                       nk3 = nk2.rstrip()
+                       _name = nk3
+                       gs = cl.getGroup(msg.to)
+                       targets = []
+                       for s in gs.members:
+                           if _name in s.displayName:
+                              targets.append(s.mid)
+                       if targets == []:
+                           cl.sendMessage(msg.to,"!!..😁")
+                           pass
+                       else:
+                           for target in targets:
+                                try:
+                                    contact = cl.getContact(target)
+                                    path = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                                    cl.sendImageWithURL(msg.to, path)
+                                except Exception as e:
+                                    raise e
+#-------------------
                 elif msg.text.lower() == key["keyCommand"]+'autoadd on':
                     settings["autoAdd"] = True
                     cl.sendText(msg.to, "Berhasil mengaktifkan auto add")
