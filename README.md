@@ -32,7 +32,7 @@ Di Termux :
 - Ketik -> `pip2 install gtts`
 - Ketik -> `pip2 install pytz`
 - Ketik -> `pip2 install googletrans`
-- Ketik -> `git clone https://github.com/zelebez69/zelebezsb`
+- Ketik -> `git clone https://github.com/zelebez6969/zelebezsb`
 - Ketik -> `cd zelebezsb`
 - Ketik -> `python2 zelebez.py`
 
