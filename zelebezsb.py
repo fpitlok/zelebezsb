@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-
-
-
 print("You can generate token Here")
 print("http://101.255.95.249:6969")
 print("FIXED BY RIO")
@@ -22,13 +19,10 @@ from googletrans import Translator
 botStart = time.time() 
 
 cl = zelebez.LINE()
-cl.login(token='TOKENMU SAYANG')
+cl.login(token='TOKENMU')
 cl.loginResult()
 
 print ("Login Success")
-reload(sys)
-sys.setdefaultencoding('utf-8')
-
 #==============================================================================#
 #=============================== WAIT MESSAGE =================================#
 #==============================================================================#
@@ -174,7 +168,7 @@ def summon(to, nama):
     try:
         cl.sendMessage(msg)
     except Exception as error:
-        print error
+        print (error) 
        
 def waktu(secs):
     mins, secs = divmod(secs,60)
@@ -741,7 +735,7 @@ def bot(op):
                                    cl.CloneContactProfile(target)
                                    cl.sendText(msg.to, "Success Clone Profile")
                                 except Exception as e:
-                                    print e
+                                    print (e) 
                 elif msg.text.lower() == key["keyCommand"]+'restoreprofile':
                     try:
                         cl.updateDisplayPicture(restoreprofile.pictureStatus)
@@ -1039,7 +1033,7 @@ def bot(op):
                             nm5 += [nama[m]]
                         summon(msg.to, nm5)
                      if jml > 500:
-                         print "Terlalu Banyak Men 500+"
+                         print ("Terlalu Banyak Men 500+") 
                      cnt = Message()
                      cnt.text = "Jumlah:\n" + str(jml) +  " Members"
                      cnt.to = msg.to
@@ -1178,7 +1172,7 @@ def bot(op):
                             try:
                               cl.sendMessage(msg)
                             except Exception as error:
-                                  print error
+                                  print (error) 
                             pass
                         else:
                             cl.sendText(msg.to, "Lurking has not been set.")
@@ -1496,10 +1490,10 @@ def bot(op):
                 pass           
             
         if op.type == 59:
-            print op
+            print (op)
             
     except Exception as error:
-        print error
+        print (error)
         
 while True:
     try:
