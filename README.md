@@ -19,7 +19,7 @@ in C9 :
 - Ketik -> `sudo pip install googletrans`
 - Ketik -> `git clone https://github.com/zelebez6969/zelebezsb`
 - Ketik -> `cd zelebezsb`
-- Ketik -> `python zelebez.py`
+- Ketik -> `python zelebezsb.py`
 
 Di Termux :
 - Ketik -> `pkg update`
