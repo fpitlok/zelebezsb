@@ -6,8 +6,8 @@ print("add my id line: http://line.me/ti/p/KTS6MCiOZe")
 print("my OA http://line.me/ti/p/%40edr5005y") 
 
 
-import zelebez
-from zelebez.lib.curve.ttypes import *
+import LIBERATION
+from LIBERATION.lib.curve.ttypes import *
 from datetime import datetime
 from time import sleep
 from bs4 import BeautifulSoup
@@ -18,7 +18,7 @@ from googletrans import Translator
     
 botStart = time.time() 
 
-cl = zelebez.LINE()
+cl = LIBERATION.LINE()
 cl.login(token='TOKENMU')
 cl.loginResult()
 
