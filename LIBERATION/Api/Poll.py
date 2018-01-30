@@ -19,7 +19,7 @@ class Poll:
   port = 443;
 
   UA = "Line/7.18.0"
-  LA = "CHROMOS\t7.18.0\tChrome_OS\t10"
+  LA = "CHROMEOS\t1.4.17\tChrome_OS\t1"
 
 
   rev = 0
