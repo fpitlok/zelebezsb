@@ -26,6 +26,7 @@ Di Termux :
 - Ketik -> `pkg update`
 - Ketik -> `pkg install git`
 - Ketik -> `pkg install python2`
+- Ketik -> `pkg install python2-pip`
 - Ketik -> `pip2 install rsa`
 - Ketik -> `pip2 install thrift==0.9.3`
 - Ketik -> `pip2 install requests`
